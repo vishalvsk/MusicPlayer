@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- all bootstrap links are given here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+
+<body class="">
+    <div id="music-player">
+        <!-- header section starts here -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark navigation-menu">
+                <!-- website logo -->
+                <a class="navbar-brand website_logo" href="#"><img src="./media/image4.png" width="20%" height="20%" />
+                    <div><span>Ruchika's</span><br />
+                        <span style="font-weight: bolder;">StrangeMusic</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <form class="form-inline">
+                        <div class="search-bar">
+                            <div class="input-wrapper mt-2">
+                                <input type="text" name="search" placeholder="Search">
+                                <i class="fas fa-microphone mic-ico"></i>
+                                <i class="fas fa-search search-ico"></i>
+                            </div>
+                        </div>
+                      </form>
+                      <!-- favourites section -->
+                    <li class="nav-item active">
+                      <a class="nav-link mt-3" href="#">Favourites </a>
+                    </li>
+                    <!-- notfication section -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><div class="notification-ico mt-3">
+                        <i class="fas fa-light fa-bell"></i>
+                    </div></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">
+                        <div class="profile">
+                            <!-- profile pic section -->
+                            <div class="profile-pic">
+                               <img src="./images/passport_photo.jpg"/>
+                            </div>
+                       </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <!-- main section starts from here -->
+        <main class="row">
+            <div class="col-12 col-sm-12 col-md-7">
+                <div class="row main-section-1 mb-3">
+                    <div class="col-12">
+                        <!-- siger information given here -->
+                        <div class="row singer">
+                            <div class="col-12 col-sm-12 col-md-4 singer-image carousel">
+                                <ol class="carousel__viewport">
+                                    <li id="carousel__slide1"
+                                        tabindex="0"
+                                        class="carousel__slide">
+                                      <div class="carousel__snapper">
+                                        <img src="./media/singers/singer1.webp"/>
+                                    </div>
+                                        <a href="#carousel__slide4"
+                                           class="carousel__prev">Go to last slide</a>
+                                        <a href="#carousel__slide2"
+                                           class="carousel__next">Go to next slide</a>
+                                      
+                                    </li>
+                                    <li id="carousel__slide2"
+                                        tabindex="0"
+                                        class="carousel__slide">
+                                      <div class="carousel__snapper">
+                                        <img src="./media/singers/singer2.webp"/>
+                                      </div>
+                                      <a href="#carousel__slide1"
+                                         class="carousel__prev">Go to previous slide</a>
+                                      <a href="#carousel__slide3"
+                                         class="carousel__next">Go to next slide</a>
+                                    </li>
+                                    <li id="carousel__slide3"
+                                        tabindex="0"
+                                        class="carousel__slide">
+                                      <div class="carousel__snapper">
+                                        <img src="./media/singers/singer4.webp"/>
+                                      </div>
+                                      <a href="#carousel__slide2"
+                                         class="carousel__prev">Go to previous slide</a>
+                                      <a href="#carousel__slide4"
+                                         class="carousel__next">Go to next slide</a>
+                                    </li>
+                                    <li id="carousel__slide4"
+                                        tabindex="0"
+                                        class="carousel__slide">
+                                      <div class="carousel__snapper">
+                                        <img src="./media/singers/singer5.jpeg"/>
+                                      </div>
+                                      <a href="#carousel__slide3"
+                                         class="carousel__prev">Go to previous slide</a>
+                                      <a href="#carousel__slide1"
+                                         class="carousel__next">Go to first slide</a>
+                                    </li>
+                                  </ol>
+                                  <aside class="carousel__navigation">
+                                    <ol class="carousel__navigation-list">
+                                      <li class="carousel__navigation-item">
+                                        <a href="#carousel__slide1"
+                                           class="carousel__navigation-button">Go to slide 1</a>
+                                      </li>
+                                      <li class="carousel__navigation-item">
+                                        <a href="#carousel__slide2"
+                                           class="carousel__navigation-button">Go to slide 2</a>
+                                      </li>
+                                      <li class="carousel__navigation-item">
+                                        <a href="#carousel__slide3"
+                                           class="carousel__navigation-button">Go to slide 3</a>
+                                      </li>
+                                      <li class="carousel__navigation-item">
+                                        <a href="#carousel__slide4"
+                                           class="carousel__navigation-button">Go to slide 4</a>
+                                      </li>
+                                    </ol>
+                                  </aside>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-8 song-info p-5">
+                                <div class="row">
+                                    <div class="col-12 col-sm-7">
+                                        <h5>ColdPlay</h5>
+                                    </div>
+                                    <div class="col-12 col-sm-5">
+                                       <span>851 Followers</span>
+                                    </div>
+                                </div>
+                               
+                               <span>British Band</span>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi placeat dolorum delectus atque nostrum ipsa animi rem quod! Architecto fugit, sequi facere possimus rerum et eligendi quibusdam maxime minima repellat?</p>
+                               <div class="singer-info-footer mt-5 row">
+                                <div class="col-12 col-sm-6">
+                                    <button class="px-4 py-2">Play All</button><br/>
+                                    <span>247 Tracks | 128 Albums</span>
+                                </div>
+                                <div class="mt-2 col-12 col-sm-3 follow">
+                                    <span>Follow</span>
+                                </div>
+                               </div>
+                            </div>
+      
+                         </div>
+                    </div>
+                </div>
+                <div class="row main-section-2">
+                    <div class="col-12 playlist">
+                        <div class="row">
+                              <div class="col-12 playlist-item mb-2">
+                                 <div class="row">
+                                    <div class="col-5">
+                                        <div class="row">
+                                            <div class="col-2 py-4">
+                                                   01
+                                            </div>
+                                            <div class="col-5 py-2">
+                                              <img src="./media/singers/sixnine.jpg"/>
+                                              <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                            </div>
+                                            <div class="col-5 py-3 singer-name">
+                                                <span class="d-block">Mirage </span>
+                                                <span>Else</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 py-4">
+                                        <span style="color:gray">4.44</span>
+                                    </div>
+                                    <div class="col-3 offset-2 py-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div class="col-6">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              
+                              <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  02
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/Ariana.png"/>
+
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  03
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/nicki minaj.jpg"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  04
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/justin-bieber.jpeg"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                05
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/singer-songwriter.webp"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  06
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/singer1.webp"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  07
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/Camila Cabello.jpg"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  08
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/drake.jpg"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  09
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/ed-sheeran.jpeg"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                   <div class="col-3 offset-2 py-4">
+                                       <div class="row">
+                                           <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                           </div>
+                                           <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                             </div>
+
+                             <div class="col-12 playlist-item mb-2">
+                                <div class="row">
+                                   <div class="col-5">
+                                       <div class="row">
+                                           <div class="col-2 py-4">
+                                                  10
+                                           </div>
+                                           <div class="col-5 py-2">
+                                             <img src="./media/singers/eminem.jpg"/>
+                                             <div class="play-btn">
+                                                <i class="fas fa-play"></i>
+                                              </div>
+                                           </div>
+                                           <div class="col-5 py-3 singer-name">
+                                               <span class="d-block">Mirage </span>
+                                               <span>Else</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-2 py-4">
+                                       <span style="color:gray">4.44</span>
+                                   </div>
+                                    <div class="col-3 offset-2 py-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                               <i class="far fa-heart"></i>
+                                            </div>
+                                            <div class="col-6">
+                                               <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-12 col-sm-12 col-md-4 mt-5 offset-md-1">
+                <div class="row">
+                    <!-- similar artists section starts from here -->
+                    <div class="col-7">
+                        <h3>Similar Artists</h3>
+                    </div>
+                    <div class="offset-2 col-3">
+                        <span>View All</span>
+                    </div>
+                </div>
+                <div class="row artists">
+                    <div class="col-4 artists-image">
+                        <img src="./media/singers/istockphoto.jpeg"/>
+                    </div>
+                    <div class="col-5 artists-name">
+                        <span>Imagine Dragons</span>
+                        <span>Pop Band</span>
+                    </div>
+                    <div class="offset-1 col-1 artists-name">
+                        <span>...</span>
+                        <span>4.44</span>
+                    </div>
+                </div>
+                <div class="row artists">
+                    <div class="col-4 artists-image">
+                        <img src="./media/singers/justin-bieber.jpeg"/>
+                    </div>
+                    <div class="col-5 artists-name">
+                        <span>Imagine Dragons</span>
+                        <span>Pop Band</span>
+                    </div>
+                    <div class="offset-1 col-1 artists-name">
+                        <span>...</span>
+                        <span>4.44</span>
+                    </div>
+                </div>
+                <div class="row artists">
+                    <div class="col-4 artists-image">
+                        <img src="./media/singers/Katy perry.jpg"/>
+                    </div> 
+                    <div class="col-5 artists-name">
+                        <span>Imagine Dragons</span>
+                        <span>Pop Band</span>
+                    </div>
+                    <div class="offset-1 col-1 artists-name">
+                        <span>...</span>
+                        <span>4.44</span>
+                    </div>
+                </div> 
+
+                 <div class="row mt-5">
+                    <div class="col-8">
+                        <h3>Recently Played</h3>
+                    </div>
+                    <div class="offset-1 col-3">
+                        <span>View All</span>
+                    </div>
+                </div> 
+
+                <div class="row artists recents">
+                    <div class="col-2">
+                        <span>01</span>
+                    </div>
+                    <div class="col-3 artists-image recent-songs">
+                        <img src="./media/singers/Lil wayne.jpg"/>
+                    </div>
+                    <div class="col-3 artists-name">
+                        <span>Mirage</span>
+                        <span>Else</span>
+                    </div>
+                    <div class="offset-2 col-1 artists-name">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                </div>
+                <div class="row artists recents">
+                    <div class="col-2">
+                        <span>02</span>
+                    </div>
+                    <div class="col-3 artists-image recent-songs">
+                        <img src="./media/singers/nicki minaj.jpg"/>
+                    </div>
+                    <div class="col-3 artists-name">
+                        <span>Mirage</span>
+                        <span>Else</span>
+                    </div>
+                    <div class="offset-2 col-1 artists-name">
+                        <span><i class="far fa-heart"></i></span> 
+                    </div>
+                </div> 
+             <div class="row artists recents">
+                    <div class="col-2">
+                        <span>03</span>
+                    </div>
+                    <div class="col-3 artists-image recent-songs">
+                        <img src="./media/singers/posty.png"/>
+                    </div>
+                    <div class="col-3 artists-name">
+                        <span>Mirage</span>
+                        <span>Else</span>
+                    </div>
+                    <div class="offset-2 col-1 artists-name">
+                        <span><i class="far fa-heart"></i></span> 
+                    </div>
+                </div> 
+                 <div class="row artists recents">
+                    <div class="col-2">
+                        <span>04</span>
+                    </div>
+                    <div class="col-3 artists-image recent-songs">
+                        <img src="./media/singers/singer-songwriter.webp"/>
+                    </div>
+                    <div class="col-3 artists-name">
+                        <span>Mirage</span>
+                        <span>Else</span>
+                    </div>
+                    <div class="offset-2 col-1 artists-name">
+                        <span><i class="far fa-heart"></i></span> 
+                    </div>
+                </div> 
+                 <div class="row artists recents">
+                    <div class="col-2">
+                        <span>05</span>
+                    </div>
+                    <div class="col-3 artists-image recent-songs">
+                        <img src="./media/english songs/best-selling.webp"/>
+                    </div>
+                    <div class="col-3 artists-name">
+                        <span>Mirage</span>
+                        <span>Else</span>
+                    </div>
+                    <div class="offset-2 col-1 artists-name">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                </div>
+                <div class="row artists recents">
+                    <div class="col-2">
+                        <span>06</span>
+                    </div>
+                    <div class="col-3 artists-image recent-songs">
+                        <img src="./media/hindi songs/Gadar-2.jpeg"/>
+                    </div>
+                    <div class="col-3 artists-name">
+                        <span>Mirage</span>
+                        <span>Else</span>
+                    </div>
+                    <div class="offset-2 col-1 artists-name">
+                        <span><i class="far fa-heart"></i></span>
+                    </div>
+                </div> 
+            </aside>
+        </main>
+    </div>
+    <!-- footer section starts from here -->
+        <footer>
+            <div class="row">
+                <div class="col-12 player">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4">
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3 offset-md-1 img-container">
+                                    <img src="./media/singers/ed sheeran.jpg"/>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 py-2">
+                                     <span>Imagine by John</span><br/>
+                                     <span style="color:gray">John lenmon</span>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-2 py-2">
+                                    <span><i class="far fa-heart"></i></span>
+                                    <span> <i class="fas fa-ban"></i></span>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mt-2">
+                            <div class="row music-controls">
+                                <div class="col-1 offset-3">
+                                    <i class="fas fa-random"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-step-backward"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-pause-circle"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-step-forward"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-redo"></i>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2">
+                                     <span>1.39</span>
+                                </div>
+                                <div class="col-8">
+                                    <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value="0"
+                                    class="slider"
+                                    id="myRange"
+                                  />
+                                </div>
+                                <div class="col-2">
+                                    <span>4.44</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2 offset-md-1 mt-2">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fas fa-list-ul"></i>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fas fa-volume-up"></i>
+                                </div>
+                                <div class="col-4">
+                                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top: 0px;"/>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script
+        src="https://kit.fontawesome.com/2d9b67a497.js"
+        crossorigin="anonymous"
+      ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</body>
